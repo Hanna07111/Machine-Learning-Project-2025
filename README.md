@@ -10,7 +10,7 @@ A pipeline of data extraction -> feature engineering -> preprocessing -> model t
 
   This script loads .cell files from monitored (mon/) and unmonitored (unmon/) directories, extracts traffic features from each file, labels them, and appends all results into a single CSV file (all_features.csv).
 
-  It is designed for the website fingerprinting (WF) feature engineering pipeline and works together with:
+  It is designed for the website fingerprinting feature engineering pipeline and works together with:
 
   - extra_credit_data_loader.py — provides load_one_cell()
   - extra_credit_feature_engineering.py — provides extract_all_features()
