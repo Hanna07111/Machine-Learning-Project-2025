@@ -1,6 +1,28 @@
 # Machine-Learning-Project-2025
 project repository for 2025 fall semester machine learning course
 
+## Models
+This repository provides .ipynb files for evaluating the performance of each model.
+Before running any notebook, update the data path according to your environment.
+All experiments were conducted using CPU / NVIDIA T4 GPU on Google Colab.
+
+### Baseline
+| Model | Closed World | Open World |
+| :----: | :----: | :----: |
+|  XGBoost |[Notebook](Models/Baseline/XGBoost_closed-world.ipynb)|[Notebook](Models/Baseline/XGBoost_open-world.ipynb)|
+|  Neural Network |[Notebook](Models/Baseline/MLP_closed-world.ipynb)|[Notebook_binary](Models/Baseline/MLP_open-world_bin.ipynb)/[Notebook_multiclass](Models/Baseline/MLP_open-world_mul.ipynb)|
+|  SVM |||
+
+### Tuning
+| Model | Closed World | Open World |
+| :----: | :----: | :----: |
+|  XGBoost |[Notebook](Models/Tuning/XGBoost_closed-world-tuning.ipynb)|[Notebook](Models/Tuning/XGBoost_open-world-tuning.ipynb)|
+
+### Ensemble
+| Model | Closed World | Open World |
+| :----: | :----: | :----: |
+|  XGBoost + CatBoost |[Notebook](Models/Ensemble/XGBoost+Catboost_closed-world.ipynb)|[Notebook](Models/Ensemble/XGBoost+Catboost_open-world.ipynb)|
+
 ## Extra Credit
 A pipeline of data extraction -> feature engineering -> preprocessing -> model training -> model assessment.
 
