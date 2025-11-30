@@ -32,13 +32,14 @@ All experiments were conducted using CPU / NVIDIA T4 GPU on Google Colab.
 | :----: | :----: | :----: |
 |  XGBoost |[Notebook](Models/Baseline/XGBoost_closed-world.ipynb)|[Notebook](Models/Baseline/XGBoost_open-world.ipynb)|
 |  Neural Network |[Notebook](Models/Baseline/MLP_closed-world.ipynb)|[Notebook_binary](Models/Baseline/MLP_open-world_bin.ipynb)/[Notebook_multiclass](Models/Baseline/MLP_open-world_mul.ipynb)|
-|  SVM |||
+|  SVM |[Notebook](Models/Baseline/SVM_closed-world.ipynb)|[Notebook](Models/Baseline/SVM_open-world.ipynb)|
 
 ### Tuning
 | Model | Closed World | Open World |
 | :----: | :----: | :----: |
 |  XGBoost |[Notebook](Models/Tuning/XGBoost_closed-world-tuning.ipynb)|[Notebook](Models/Tuning/XGBoost_open-world-tuning.ipynb)|
 | Neural Network | [Notebook](Models/Tuning/MLP_closed-world-tuning.ipynb) | [Notebook_binary](Models/Tuning/MLP_open-world-tuning_bin.ipynb)/[Notebook_multiclass](Models/Tuning/MLP_open-world-tuning_mul.ipynb)|
+| SVM |||
 
 ### Ensemble
 | Model | Closed World | Open World |
