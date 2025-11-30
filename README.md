@@ -1,6 +1,27 @@
 # Machine-Learning-Project-2025
 project repository for 2025 fall semester machine learning course
 
+## Data Analysis
+
+This section provides EDA notebooks to visualize and analyze network traffic patterns, distributions, and feature correlations for both monitored and unmonitored datasets. All experiments were conducted using an NVIDIA T4 GPU on Google Colab and a local environment utilizing torch-directml.
+
+| Target Data | Notebook |
+| :--- | :--- |
+| **Monitored** | [monitored_analysis.ipynb](Feature%20Engineering/monitored_analysis.ipynb) |
+| **Unmonitored** | [unmonitored_analysis.ipynb](Feature%20Engineering/unmonitored_analysis.ipynb) |
+
+## Feature Engineering
+
+This directory contains scripts and notebooks for extracting meaningful features from raw traffic data (`.pkl`) and generating datasets (`.csv`) for model training. All experiments were conducted using an NVIDIA T4 GPU on Google Colab and a local environment utilizing torch-directml.
+
+**⚠️ Usage Note:** You must run **`feature_engineering_v0_5.py`** first to generate the `train_set_AB.csv` and `test_set_AB.csv` files required for other notebooks.
+
+| Step | Script / Notebook | Description |
+| :--- | :--- | :--- |
+| **1. Extraction & Generation** | [feature_engineering_v0_5.ipynb](./Feature%20Engineering/feature_engineering_v0_5.ipynb) | **(Main)** Extracts Non-leaky (18) & Fingerprint (8) features. Generates final CSV datasets (`Set A`, `Set B`, `Set A+B`). |
+| **2. Validation** | [feature_engineering_v1.ipynb](./Feature%20Engineering/feature_engineering_v1.ipynb) | Validates feature sets and evaluates baseline model performance using the generated CSVs. |
+| **3. Initial Selection** | [feature_engineering_v0.ipynb](./Feature%20Engineering/feature_engineering_v0.ipynb) | (Legacy) Initial feature selection using correlation analysis. |
+
 ## Models
 This repository provides .ipynb files for evaluating the performance of each model.
 Before running any notebook, update the data path according to your environment.
