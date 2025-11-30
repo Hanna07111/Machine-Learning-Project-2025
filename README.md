@@ -23,6 +23,10 @@ All experiments were conducted using CPU / NVIDIA T4 GPU on Google Colab.
 | Model | Closed World | Open World |
 | :----: | :----: | :----: |
 |  XGBoost + CatBoost |[Notebook](Models/Ensemble/XGBoost+Catboost_closed-world.ipynb)|[Notebook](Models/Ensemble/XGBoost+Catboost_open-world.ipynb)|
+|  MLP + XGBoost |[Notebook](Models/Ensemble/MLP+XGBoost_closed-world.ipynb)|[Notebook_binary](Models/Ensemble/MLP+XGBoost_closed-world_bin.ipynb)/[Notebook_multiclass](Models/Ensemble/MLP+XGBoost_closed-world_mul.ipynb)|
+|  MLP + XGBoost + SVM |[Notebook](Models/Ensemble/MLP+XGBoost+SVM_closed-world.ipynb)||
+|  MLP + LightGBM ||[Notebook_binary](Models/Ensemble/MLP+LightGBM_open-world_bin.ipynb)|
+|  MLP + LightGBM + XGBoost ||[Notebook_multiclass](Models/Ensemble/MLP+XGBoost+LightGBM_open-world_mul.ipynb)|
 
 ## Extra Credit
 A pipeline of data extraction -> feature engineering -> preprocessing -> model training -> model assessment.
