@@ -17,7 +17,7 @@ All experiments were conducted using CPU / NVIDIA T4 GPU on Google Colab.
 | Model | Closed World | Open World |
 | :----: | :----: | :----: |
 |  XGBoost |[Notebook](Models/Tuning/XGBoost_closed-world-tuning.ipynb)|[Notebook](Models/Tuning/XGBoost_open-world-tuning.ipynb)|
-| Neural Network | [Notebook](Models/Tuning/MLP_closed-world-tuning.ipynb) | [Notebook_binary](Models/Tuning/MLP_open-world-tuning_bin.ipynb)/[Notebook_multiclass](Models/Baseline/MLP_open-world-tuning_mul.ipynb)|
+| Neural Network | [Notebook](Models/Tuning/MLP_closed-world-tuning.ipynb) | [Notebook_binary](Models/Tuning/MLP_open-world-tuning_bin.ipynb)/[Notebook_multiclass](Models/Tuning/MLP_open-world-tuning_mul.ipynb)|
 
 ### Ensemble
 | Model | Closed World | Open World |
