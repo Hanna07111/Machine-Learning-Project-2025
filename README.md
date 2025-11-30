@@ -133,4 +133,14 @@ A pipeline of data extraction -> feature engineering -> preprocessing -> model t
   pip install pandas numpy
   ```
 
-  
+  ### Additional Experiments
+  The Extra Credit folder also includes two exploratory experiments:
+  - `_extra_credit_chunk_experiment.ipynb`: basic + chunk-based statistical features
+  - `_extra_credit_iat_experiment.ipynb`: FFT-based IAT frequency features, spectral analysis
+
+  - **Data Used**
+    - These exploratory experiments were performed on "mon_25.zip"
+    - Each exploratory notebook loads raw `.cell` files from "mon_25" and applies its own preprocessing
+
+  - These experiments are independent exploratory analyses and are not part of the final submitted pipeline.  
+  - They are included to document additional attempts at alternative feature engineering approaches.
