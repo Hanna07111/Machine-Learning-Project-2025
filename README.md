@@ -1,6 +1,28 @@
 # Machine-Learning-Project-2025
 project repository for 2025 fall semester machine learning course
 
+## Data&Data Preprocessing
+This directory contains all datasets used throughout our pipelines.
+During the feature engineering stage, we extracted two intermediate files:
+
+- [train_set_AB.csv](Data/train_set_AB.csv)
+
+- [test_set_AB.csv](Data/test_set_AB.csv)
+
+Using these files, we generated the final datasets for the model experiments:
+
+- Closed-world: [closedworld_train.csv](Data/closedworld_train.csv), [closedworld_test.csv](Data/closedworld_test.csv)
+
+- Open-world: [openworld_train.csv](Data/openworld_train.csv), [openworld_test.csv](Data/openworld_test.csv)
+
+We also perform basic preprocessing steps—such as clipping and scaling—using
+the following notebook:
+
+- [Data Preprocessing Notebook](Data%20Preprocessing/DataPreprocessing.ipynb)
+
+You can reproduce all experimental datasets (closedworld_* and openworld_*) from
+train_set_AB.csv and test_set_AB.csv by running this notebook.
+
 ## Data Analysis
 
 This section provides EDA notebooks to visualize and analyze network traffic patterns, distributions, and feature correlations for both monitored and unmonitored datasets. All experiments were conducted using an NVIDIA T4 GPU on Google Colab and a local environment utilizing torch-directml.
@@ -14,7 +36,7 @@ This section provides EDA notebooks to visualize and analyze network traffic pat
 
 This directory contains scripts and notebooks for extracting meaningful features from raw traffic data (`.pkl`) and generating datasets (`.csv`) for model training. All experiments were conducted using an NVIDIA T4 GPU on Google Colab and a local environment utilizing torch-directml.
 
-**⚠️ Usage Note:** You must run **`feature_engineering_v0_5.py`** first to generate the `train_set_AB.csv` and `test_set_AB.csv` files required for other notebooks.
+**⚠️ Usage Note:** You must run **`feature_engineering_v0_5.py`** first to generate the `train_set_AB.csv` and `test_set_AB.csv` files required for other notebooks. If you prefer, you may skip this step and simply use the pre-generated data provided in the Data/ directory.
 
 | Step | Script / Notebook | Description |
 | :--- | :--- | :--- |
@@ -23,9 +45,10 @@ This directory contains scripts and notebooks for extracting meaningful features
 | **3. Initial Selection** | [feature_engineering_v0.ipynb](./Feature%20Engineering/feature_engineering_v0.ipynb) | (Legacy) Initial feature selection using correlation analysis. |
 
 ## Models
-This repository provides .ipynb files for evaluating the performance of each model.
-Before running any notebook, update the data path according to your environment.
-All experiments were conducted using CPU / NVIDIA T4 GPU on Google Colab.
+This directory provides .ipynb files for evaluating the performance of each model.
+All experiments were conducted using a CPU / NVIDIA T4 GPU on Google Colab.
+
+**⚠️ Usage Note:** Before running any notebook, update the train/test data path according to your environment.
 
 ### Baseline
 | Model | Closed World | Open World |
@@ -46,9 +69,9 @@ All experiments were conducted using CPU / NVIDIA T4 GPU on Google Colab.
 | :----: | :----: | :----: |
 |  XGBoost + CatBoost |[Notebook](Models/Ensemble/XGBoost+Catboost_closed-world.ipynb)|[Notebook](Models/Ensemble/XGBoost+Catboost_open-world.ipynb)|
 |  MLP + XGBoost |[Notebook](Models/Ensemble/MLP+XGBoost_closed-world.ipynb)|[Notebook_binary](Models/Ensemble/MLP+XGBoost_open-world_bin.ipynb)/[Notebook_multiclass](Models/Ensemble/MLP+XGBoost_open-world_mul.ipynb)|
-|  MLP + XGBoost + SVM |[Notebook](Models/Ensemble/MLP+XGBoost+SVM_closed-world.ipynb)||
-|  MLP + LightGBM ||[Notebook_binary](Models/Ensemble/MLP+LightGBM_open-world_bin.ipynb)|
-|  MLP + LightGBM + XGBoost ||[Notebook_multiclass](Models/Ensemble/MLP+XGBoost+LightGBM_open-world_mul.ipynb)|
+|  MLP + XGBoost + SVM |[Notebook](Models/Ensemble/MLP+XGBoost+SVM_closed-world.ipynb)|-|
+|  MLP + LightGBM |-|[Notebook_binary](Models/Ensemble/MLP+LightGBM_open-world_bin.ipynb)|
+|  MLP + LightGBM + XGBoost |-|[Notebook_multiclass](Models/Ensemble/MLP+XGBoost+LightGBM_open-world_mul.ipynb)|
 
 ## Extra Credit
 A pipeline of data extraction -> feature engineering -> preprocessing -> model training -> model assessment.
