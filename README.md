@@ -45,7 +45,7 @@ This directory contains scripts and notebooks for extracting meaningful features
 | **3. Initial Selection** | [feature_engineering_v0.ipynb](./Feature%20Engineering/feature_engineering_v0.ipynb) | (Legacy) Initial feature selection using correlation analysis. |
 
 ## Models
-This directory provides .ipynb files for evaluating the performance of each model.
+This directory provides .ipynb files for training and evaluating the performance of each model.
 All experiments were conducted using a CPU / NVIDIA T4 GPU on Google Colab.
 
 **⚠️ Usage Note:** Before running any notebook, update the train/test data path according to your environment.
