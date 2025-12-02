@@ -2,7 +2,7 @@
 project repository for 2025 fall semester machine learning course
 
 ## Data&Data Preprocessing
-This directory contains all datasets used throughout our pipelines.
+The `Data/` directory contains all datasets used throughout our pipelines.
 During the feature engineering stage, we extracted two intermediate files:
 
 - [train_set_AB.csv](Data/train_set_AB.csv)
@@ -36,7 +36,7 @@ This section provides EDA notebooks to visualize and analyze network traffic pat
 
 This directory contains scripts and notebooks for extracting meaningful features from raw traffic data (`.pkl`) and generating datasets (`.csv`) for model training. All experiments were conducted using an NVIDIA T4 GPU on Google Colab and a local environment utilizing torch-directml.
 
-**⚠️ Usage Note:** You must run **`feature_engineering_v0_5.py`** first to generate the `train_set_AB.csv` and `test_set_AB.csv` files required for other notebooks. If you prefer, you may skip this step and simply use the pre-generated data provided in the Data/ directory.
+**⚠️ Usage Note:** You must run **`feature_engineering_v0_5.py`** first to generate the `train_set_AB.csv` and `test_set_AB.csv` files required for other notebooks. If you prefer, you may skip this step and simply use the pre-generated data provided in the `Data/` directory.
 
 | Step | Script / Notebook | Description |
 | :--- | :--- | :--- |
